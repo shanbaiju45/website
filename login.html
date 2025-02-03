@@ -1,0 +1,35 @@
+<html>
+<head <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">>
+
+<title>login </title>
+<center><h1> book your tickets now </h1></center>
+<center><img src="melbourne-cricket-ground-26.png"alt="shan baiju"width=1450 height=500></center>
+</head>
+<style>
+body {background-color:#E4EA8C;}</style>
+<h1><center> <b> login</center></b> </h1>
+<center><button>Userame</button><input type="username" id="user"></center><br>
+<center><button>Password</button><input type="password" id="pass"></center><br>
+<center><button onclick="JF()">SUBMIT</button></center>
+
+
+<center><a href="file:///C:/Users/bcomg2439/Downloads/registration2.html">registration2</a></center><br>
+
+
+<center><a href="file:///C:/Users/bcomg2439/Documents/shan%20website/homepage.html">homepage</a></center>
+<script>
+function JF()
+{
+let username = document.getElementById("user").value;
+let password = document.getElementById("pass").value;
+let uname = localStorage.getItem("username");
+let pass = localStorage.getItem("password");
+if(username == uname && password==pass)
+{alert("you are valid");
+window.location.href="profile.html";
+}
+else{ alert("intruder");}
+}
+</script>
+</html>
+</head>

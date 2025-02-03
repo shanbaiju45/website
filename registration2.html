@@ -1,0 +1,83 @@
+<html>
+  <head>
+<title>REGISTRATION</title>
+</head>
+<center>
+<body style="background-color:powderblue;">
+</body>
+<p style="color:yellow"><center>REGISTRATION</center></p>
+
+<hr>
+</hr>
+<button>FIRST NAME</button>
+<input type"text">
+<button>LAST NAME</button>
+<input type"text">
+<br>
+</br>
+<input type="radio" name="gender"
+value="male"> male
+<input type="radio" name="gender"
+value="female">female
+<br>
+</br>
+<button>AGE</button>
+<input type="number">
+<button>DATE OF BIRTH</button>
+<input type="date">
+<br>
+</br>
+<button>ADDRESS</button>
+<input type="text">
+<button>PHONE</button>
+<input type="text">
+<br>
+</br>
+<button>EMAIL</button>
+<input type="email" id="username">
+<br>
+</br>
+<select name="ticket booking" id="ticket booking">
+  <option value="ticket booking">ticket booking</option>
+  <option value="india">india</option>
+  <option value="australia">australia</option>
+  <option value="england">england</option>
+  <option value="south africa">south africa</option>
+  <option value="pakistan">pakistan</option>
+</select>
+<select name="venue" id="venue">
+  <option value="venue">venue</option>
+  <option value="banglore">banglore</option>
+  <option value="chennai">chennai</option>
+  <option value="lords">lords</option>
+  <option value="mcg">mcg</option>
+</select>
+<button>stadium name</button>
+<input type="text">
+<br>
+</br>
+<button>Create Password</button>
+<input type="password" id="password">
+<br>
+</br>
+<button>Confirm Password</button>
+<input type="password">
+<button onclick="AMS()">Submit</button>
+<script>
+function AMS()
+{
+let username=document.getElementById("username");
+let password=document.getElementById("password");
+localStorage.setItem("username",username.value);
+localStorage.setItem("password",password.value);
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));                                    
+}
+</script>
+</center>
+<hr>
+</hr>
+<hr>
+</hr>
+</body>
+</html>
